@@ -23,3 +23,9 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
+
+
+### Carthage ###
+# Carthage - A simple, decentralized dependency manager for Cocoa
+Carthage.checkout
+Carthage.build

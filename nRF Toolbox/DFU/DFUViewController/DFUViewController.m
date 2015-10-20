@@ -23,14 +23,11 @@
 #import "DFUViewController.h"
 #import "ScannerViewController.h"
 
+#import <DFU/DFU.h>
+
 #import "Constants.h"
 #import "HelpViewController.h"
 #import "FileTypeTableViewController.h"
-#import "SSZipArchive.h"
-#import "UnzipFirmware.h"
-#import "Utility.h"
-#import "DFUHelper.h"
-#include "DFUHelper.h"
 
 
 @interface DFUViewController () {

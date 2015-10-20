@@ -21,8 +21,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import "DFUOperations.h"
-#import "InitData.h"
+#import <DFU/DFU.h>
 
 @interface DFUHelper : NSObject
 
