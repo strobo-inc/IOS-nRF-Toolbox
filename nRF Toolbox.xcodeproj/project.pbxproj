@@ -22,8 +22,8 @@
 		2C9AD54F1BD5F0F30007DDDB /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6691D1983C7DD004680F0 /* SSZipArchive.m */; };
 		2C9AD5501BD5F1960007DDDB /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEAB3AF1983CFEF00309DBC /* libz.dylib */; };
 		2C9AD5511BD602600007DDDB /* DFUHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = A804625A1AD807510074F116 /* DFUHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C9AD5521BD602600007DDDB /* AccessFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2A3C62196D408A009E2506 /* AccessFileSystem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2C9AD5551BD602600007DDDB /* UnzipFirmware.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECF2023196AD6AF005495C8 /* UnzipFirmware.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2C9AD5521BD602600007DDDB /* AccessFileSystem.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E2A3C62196D408A009E2506 /* AccessFileSystem.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C9AD5551BD602600007DDDB /* UnzipFirmware.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECF2023196AD6AF005495C8 /* UnzipFirmware.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2CEDEB3E1BC33FC100F86802 /* DFUOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E445C871951A46800633892 /* DFUOperations.m */; };
 		2CEDEB421BC33FE000F86802 /* DFUOperationsDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E445C8A1951A48100633892 /* DFUOperationsDetails.m */; };
 		2CEDEB431BC33FE000F86802 /* FileOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF201E19655312005495C8 /* FileOperations.m */; };
@@ -34,7 +34,7 @@
 		2CEDEB4D1BC3417400F86802 /* FileOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECF201D19655312005495C8 /* FileOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CEDEB4E1BC3417400F86802 /* BLEOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ECF2020196AA58D005495C8 /* BLEOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2CEDEB4F1BC3417400F86802 /* Utility.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E445C8C1951A50A00633892 /* Utility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2CEDEB501BC3417400F86802 /* IntelHex2BinConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5214D0C51886951500460637 /* IntelHex2BinConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2CEDEB501BC3417400F86802 /* IntelHex2BinConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 5214D0C51886951500460637 /* IntelHex2BinConverter.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2CEDEB511BC3417400F86802 /* DFUTests.xctest in Headers */ = {isa = PBXBuildFile; fileRef = 2C2991751BC27DC70036D36A /* DFUTests.xctest */; };
 		2CEDEB531BC3440000F86802 /* Utility.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E445C8D1951A51A00633892 /* Utility.m */; };
 		2CEDEB541BC3451800F86802 /* DFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C29916B1BC27DC60036D36A /* DFU.framework */; };
@@ -955,10 +955,10 @@
 				2CEDEB4B1BC3417400F86802 /* DFUOperations.h in Headers */,
 				2C9AD5511BD602600007DDDB /* DFUHelper.h in Headers */,
 				2CEDEB4F1BC3417400F86802 /* Utility.h in Headers */,
-				2C9AD5521BD602600007DDDB /* AccessFileSystem.h in Headers */,
 				2CEDEB4E1BC3417400F86802 /* BLEOperations.h in Headers */,
 				2CEDEB4C1BC3417400F86802 /* DFUOperationsDetails.h in Headers */,
 				2CEDEB4D1BC3417400F86802 /* FileOperations.h in Headers */,
+				2C9AD5521BD602600007DDDB /* AccessFileSystem.h in Headers */,
 				2CEDEB501BC3417400F86802 /* IntelHex2BinConverter.h in Headers */,
 				2C9AD5551BD602600007DDDB /* UnzipFirmware.h in Headers */,
 				2CEDEB511BC3417400F86802 /* DFUTests.xctest in Headers */,
