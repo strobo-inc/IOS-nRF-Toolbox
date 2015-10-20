@@ -22,10 +22,11 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreBluetooth/CoreBluetooth.h>
+#import <DFU/DFUOperations.h>
+
 #import "ScannerDelegate.h"
 #import "FileTypeTableViewController.h"
 #import "AppFilesTableViewController.h"
-#import "DFUOperations.h"
 
 @interface DFUViewController : UIViewController <ScannerDelegate, FileSelectionDelegate, DFUOperationsDelegate>
 

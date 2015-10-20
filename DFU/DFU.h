@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Nordic Semiconductor. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 //! Project version number for DFU.
 FOUNDATION_EXPORT double DFUVersionNumber;
@@ -15,3 +15,7 @@ FOUNDATION_EXPORT double DFUVersionNumber;
 FOUNDATION_EXPORT const unsigned char DFUVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DFU/PublicHeader.h>
+
+#import <DFU/DFUOperations.h>
+#import <DFU/DFUHelper.h>
+#import <DFU/Utility.h>
