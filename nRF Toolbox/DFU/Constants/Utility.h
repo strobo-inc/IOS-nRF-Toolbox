@@ -20,7 +20,7 @@
  * USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface Utility : NSObject
 
@@ -98,7 +98,7 @@ typedef enum {
 + (NSString *) getEmptyFolderText;
 + (NSString *) getDFUAppFileHelpText;
 + (void) showAlert:(NSString *)message;
-+(void)showBackgroundNotification:(NSString *)message;
++ (UILocalNotification *) showBackgroundNotification:(NSString *)message;
 + (BOOL)isApplicationStateInactiveORBackground;
 
 @end
