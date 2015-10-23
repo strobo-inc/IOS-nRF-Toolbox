@@ -28,6 +28,7 @@
 #import "Constants.h"
 #import "HelpViewController.h"
 #import "FileTypeTableViewController.h"
+#import "Reconnector.h"
 
 
 @interface DFUViewController () {
@@ -63,7 +64,9 @@
 
 @end
 
-@implementation DFUViewController
+@implementation DFUViewController {
+    Reconnector *reconnector;
+}
 
 @synthesize backgroundImage;
 @synthesize deviceName;
@@ -285,6 +288,12 @@
     [dfuOperations setCentralManager:manager];
     deviceName.text = peripheral.name;
     [dfuOperations connectDevice:peripheral];
+
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 2 * NSEC_PER_SEC),
+            dispatch_get_main_queue(),
+            ^{
+                [self performDFU];
+            });
 }
 
 #pragma mark File Selection Delegate
@@ -357,6 +366,11 @@
 
 }
 
+-(void)retryDFU:(CBPeripheral *) peripheral
+{
+  reconnector = [[Reconnector alloc] initWithPeripheralAndScannerDelegate:peripheral scannerDelegate:self];
+}
+
 -(void)onDeviceDisconnected:(CBPeripheral *)peripheral
 {
     NSLog(@"device disconnected %@",peripheral.name);
@@ -373,7 +387,8 @@
                     [Utility showBackgroundNotification:[NSString stringWithFormat:@"%@ peripheral is disconnected.",peripheral.name]];
                 }
                 else {
-                    [Utility showAlert:@"The connection has been lost"];
+                    // [Utility showAlert:@"The connection has been lost"];
+                    [self retryDFU:peripheral];
                 }
                 [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
                 [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];

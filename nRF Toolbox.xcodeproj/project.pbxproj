@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C0C1DCC1BD9B48F00570D14 /* Reconnector.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0C1DCB1BD9B48F00570D14 /* Reconnector.m */; };
 		2C2991701BC27DC60036D36A /* DFU.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C29916F1BC27DC60036D36A /* DFU.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C2991761BC27DC70036D36A /* DFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C29916B1BC27DC60036D36A /* DFU.framework */; };
 		2C29917F1BC27DC70036D36A /* DFUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C29917E1BC27DC70036D36A /* DFUTests.m */; };
@@ -156,6 +157,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2C0C1DCA1BD9B48F00570D14 /* Reconnector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reconnector.h; sourceTree = "<group>"; };
+		2C0C1DCB1BD9B48F00570D14 /* Reconnector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reconnector.m; sourceTree = "<group>"; };
 		2C29916B1BC27DC60036D36A /* DFU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DFU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C29916E1BC27DC60036D36A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C29916F1BC27DC60036D36A /* DFU.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFU.h; sourceTree = "<group>"; };
@@ -628,6 +631,8 @@
 				5217F429185F32E500F2D5BB /* ScannerDelegate.h */,
 				5217F420185F15FA00F2D5BB /* ScannerViewController.h */,
 				5217F421185F15FA00F2D5BB /* ScannerViewController.m */,
+				2C0C1DCA1BD9B48F00570D14 /* Reconnector.h */,
+				2C0C1DCB1BD9B48F00570D14 /* Reconnector.m */,
 			);
 			path = Scanner;
 			sourceTree = "<group>";
@@ -1206,6 +1211,7 @@
 				5285D9A91890033F00305F1D /* CSCViewController.m in Sources */,
 				7E92108C18A38EE3009C6F2A /* HelpViewController.m in Sources */,
 				5217F428185F28D400F2D5BB /* ScannedPeripheral.m in Sources */,
+				2C0C1DCC1BD9B48F00570D14 /* Reconnector.m in Sources */,
 				7E99686C19800A260092E69E /* FolderFilesTableViewController.m in Sources */,
 				7EE6691F1983C7DD004680F0 /* mztools.c in Sources */,
 				524F2CD818897078008A8555 /* BGMItemCell.m in Sources */,
