@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C19FDE11BDDB8110001EEC4 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE669131983C7DD004680F0 /* crypt.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C19FDE21BDDB8110001EEC4 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE669151983C7DD004680F0 /* ioapi.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C19FDE31BDDB8110001EEC4 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE669171983C7DD004680F0 /* mztools.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C19FDE41BDDB8110001EEC4 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE669191983C7DD004680F0 /* unzip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C19FDE51BDDB8110001EEC4 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE6691B1983C7DD004680F0 /* zip.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		2C19FDE61BDDB8110001EEC4 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EE6691C1983C7DD004680F0 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		2C2991701BC27DC60036D36A /* DFU.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C29916F1BC27DC60036D36A /* DFU.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2C2991761BC27DC70036D36A /* DFU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C29916B1BC27DC60036D36A /* DFU.framework */; };
 		2C29917F1BC27DC70036D36A /* DFUTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C29917E1BC27DC70036D36A /* DFUTests.m */; };
@@ -76,26 +82,18 @@
 		5252A542188030A800EFD773 /* ProximityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5252A541188030A800EFD773 /* ProximityViewController.m */; };
 		5285D9A91890033F00305F1D /* CSCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5285D9A81890033F00305F1D /* CSCViewController.m */; };
 		7E1B422918A8DF4D006BA1BC /* high.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E1B422818A8DF4D006BA1BC /* high.mp3 */; };
-		7E2A3C64196D408A009E2506 /* AccessFileSystem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2A3C63196D408A009E2506 /* AccessFileSystem.m */; };
 		7E445C971951D09E00633892 /* FileTypeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E445C961951D09E00633892 /* FileTypeTableViewController.m */; };
 		7E6ED10B196ED482008010B6 /* firmwares in Resources */ = {isa = PBXBuildFile; fileRef = 7E6ED10A196ED482008010B6 /* firmwares */; };
 		7E6ED10F197D1D8D008010B6 /* AppFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ED10E197D1D8D008010B6 /* AppFilesTableViewController.m */; };
 		7E6ED112197D1DA4008010B6 /* UserFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E6ED111197D1DA4008010B6 /* UserFilesTableViewController.m */; };
 		7E92108C18A38EE3009C6F2A /* HelpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E92108B18A38EE3009C6F2A /* HelpViewController.m */; };
 		7E99686C19800A260092E69E /* FolderFilesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E99686B19800A260092E69E /* FolderFilesTableViewController.m */; };
-		7ECF2025196AD6AF005495C8 /* UnzipFirmware.m in Sources */ = {isa = PBXBuildFile; fileRef = 7ECF2024196AD6AF005495C8 /* UnzipFirmware.m */; };
-		7EE6691E1983C7DD004680F0 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EE669141983C7DD004680F0 /* ioapi.c */; };
-		7EE6691F1983C7DD004680F0 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EE669161983C7DD004680F0 /* mztools.c */; };
-		7EE669201983C7DD004680F0 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EE669181983C7DD004680F0 /* unzip.c */; };
-		7EE669211983C7DD004680F0 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 7EE6691A1983C7DD004680F0 /* zip.c */; };
 		7EEAB3B01983CFEF00309DBC /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EEAB3AF1983CFEF00309DBC /* libz.dylib */; };
 		A80462591AD670480074F116 /* AppUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = A80462581AD670480074F116 /* AppUtilities.m */; };
 		A83894521B17731D005B738D /* EditPopupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A83894511B17731D005B738D /* EditPopupViewController.m */; };
 		A85667D91B1F3C1A004A6D3C /* LogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A85667D81B1F3C1A004A6D3C /* LogViewController.m */; };
 		A85667DC1B208186004A6D3C /* BluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A85667DB1B208186004A6D3C /* BluetoothManager.m */; };
 		A86A784C1AB8542E00823AAB /* UARTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A86A784B1AB8542E00823AAB /* UARTViewController.m */; };
-		A8B2DFA01AB1C3040043D988 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B2DF9D1AB1C3040043D988 /* JsonParser.m */; };
-		A8B2DFA11AB1C3040043D988 /* InitData.m in Sources */ = {isa = PBXBuildFile; fileRef = A8B2DF9F1AB1C3040043D988 /* InitData.m */; };
 		A8D64E271ADBE0730069103E /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A8D64E261ADBE0730069103E /* libCorePlot-CocoaTouch.a */; };
 		A8F94C7A1A72592800F2D927 /* PageImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8F94C791A72592800F2D927 /* PageImageViewController.m */; };
 		A8F94C7C1A725D9600F2D927 /* Application_Zip_Image.png in Resources */ = {isa = PBXBuildFile; fileRef = A8F94C7B1A725D9600F2D927 /* Application_Zip_Image.png */; };
@@ -960,6 +958,12 @@
 				2CEDEB4D1BC3417400F86802 /* FileOperations.h in Headers */,
 				2C9AD5521BD602600007DDDB /* AccessFileSystem.h in Headers */,
 				2CEDEB501BC3417400F86802 /* IntelHex2BinConverter.h in Headers */,
+				2C19FDE11BDDB8110001EEC4 /* crypt.h in Headers */,
+				2C19FDE21BDDB8110001EEC4 /* ioapi.h in Headers */,
+				2C19FDE31BDDB8110001EEC4 /* mztools.h in Headers */,
+				2C19FDE41BDDB8110001EEC4 /* unzip.h in Headers */,
+				2C19FDE51BDDB8110001EEC4 /* zip.h in Headers */,
+				2C19FDE61BDDB8110001EEC4 /* SSZipArchive.h in Headers */,
 				2C9AD5551BD602600007DDDB /* UnzipFirmware.h in Headers */,
 				2CEDEB511BC3417400F86802 /* DFUTests.xctest in Headers */,
 			);
@@ -1181,11 +1185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A80462591AD670480074F116 /* AppUtilities.m in Sources */,
-				A8B2DFA01AB1C3040043D988 /* JsonParser.m in Sources */,
 				A86A784C1AB8542E00823AAB /* UARTViewController.m in Sources */,
 				7E445C971951D09E00633892 /* FileTypeTableViewController.m in Sources */,
-				7EE669201983C7DD004680F0 /* unzip.c in Sources */,
-				A8B2DFA11AB1C3040043D988 /* InitData.m in Sources */,
 				524F2CE2188984E6008A8555 /* BGMDetailsViewController.m in Sources */,
 				5252A53E18802F7200EFD773 /* DFUViewController.m in Sources */,
 				A83894521B17731D005B738D /* EditPopupViewController.m in Sources */,
@@ -1198,23 +1199,18 @@
 				5217F3F61859EE0000F2D5BB /* AppDelegate.m in Sources */,
 				5217F3F21859EE0000F2D5BB /* main.m in Sources */,
 				5217F41E185B198E00F2D5BB /* RSACViewController.m in Sources */,
-				7ECF2025196AD6AF005495C8 /* UnzipFirmware.m in Sources */,
 				5252A542188030A800EFD773 /* ProximityViewController.m in Sources */,
 				5236E162187EA7540057E974 /* HTSViewController.m in Sources */,
-				7E2A3C64196D408A009E2506 /* AccessFileSystem.m in Sources */,
-				7EE669211983C7DD004680F0 /* zip.c in Sources */,
 				5285D9A91890033F00305F1D /* CSCViewController.m in Sources */,
 				7E92108C18A38EE3009C6F2A /* HelpViewController.m in Sources */,
 				5217F428185F28D400F2D5BB /* ScannedPeripheral.m in Sources */,
 				7E99686C19800A260092E69E /* FolderFilesTableViewController.m in Sources */,
-				7EE6691F1983C7DD004680F0 /* mztools.c in Sources */,
 				524F2CD818897078008A8555 /* BGMItemCell.m in Sources */,
 				5214D0D218881D4D00460637 /* CharacteristicReader.m in Sources */,
 				5236E16C187EC6880057E974 /* StubViewController.m in Sources */,
 				5252A5361880260300EFD773 /* BGMViewController.m in Sources */,
 				524F2CE5188D2A56008A8555 /* GlucoseReadingContext.m in Sources */,
 				7E6ED10F197D1D8D008010B6 /* AppFilesTableViewController.m in Sources */,
-				7EE6691E1983C7DD004680F0 /* ioapi.c in Sources */,
 				5217F422185F15FA00F2D5BB /* ScannerViewController.m in Sources */,
 				A8F94C7A1A72592800F2D927 /* PageImageViewController.m in Sources */,
 				5236E15F187EA73F0057E974 /* HRSViewController.m in Sources */,
