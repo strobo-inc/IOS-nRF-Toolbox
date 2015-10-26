@@ -13,6 +13,6 @@
 
 @interface Reconnector : NSObject<CBCentralManagerDelegate>
 
-- (id)initWithPeripheralAndScannerDelegate:(CBPeripheral *)peripheral scannerDelegate:(id)delegate;
+- (id)initWithDelegate:(id)delegate;
 
 @end

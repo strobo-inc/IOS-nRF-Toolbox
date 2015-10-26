@@ -17,17 +17,13 @@
 
 @implementation Reconnector {
     id del;
-    CBPeripheral *per;
 }
 
 @synthesize manager;
 
 
-- (id)initWithPeripheralAndScannerDelegate:(CBPeripheral *)peripheral scannerDelegate:(id)delegate {
-    NSLog(@"Reconnect to Peripheral: %@ %@", peripheral.name, peripheral.identifier);
-
+- (id)initWithDelegate:(id)delegate {
     if (self = [super init]) {
-        per = peripheral;
         del = delegate;
 
         dispatch_queue_t queue = dispatch_queue_create("no.nordicsemi.ios.nrftoolbox", DISPATCH_QUEUE_SERIAL);
@@ -38,7 +34,7 @@
 
 - (void) centralManagerDidUpdateState:(CBCentralManager *)central {
     if (central.state == CBCentralManagerStatePoweredOn) {
-        NSDictionary *options = [NSDictionary dictionaryWithObjectsAndKeys:[NSNumber numberWithBool:YES], CBCentralManagerScanOptionAllowDuplicatesKey, nil];
+        NSDictionary *options = @{CBCentralManagerScanOptionAllowDuplicatesKey : @YES};
         [central scanForPeripheralsWithServices:nil options:options];
     }
 }

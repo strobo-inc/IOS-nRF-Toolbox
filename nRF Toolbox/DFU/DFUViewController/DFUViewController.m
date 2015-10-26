@@ -366,9 +366,9 @@
 
 }
 
--(void)retryDFU:(CBPeripheral *) peripheral
+-(void)retryDFU
 {
-  reconnector = [[Reconnector alloc] initWithPeripheralAndScannerDelegate:peripheral scannerDelegate:self];
+  reconnector = [[Reconnector alloc] initWithDelegate:self];
 }
 
 -(void)onDeviceDisconnected:(CBPeripheral *)peripheral
@@ -388,7 +388,7 @@
                 }
                 else {
                     // [Utility showAlert:@"The connection has been lost"];
-                    [self retryDFU:peripheral];
+                    [self retryDFU];
                 }
                 [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidBecomeActiveNotification object:nil];
                 [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidEnterBackgroundNotification object:nil];
